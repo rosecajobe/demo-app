@@ -1,0 +1,19 @@
+<h2>List of all savings</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th> Value</th>
+    </tr>
+  </thead>
+
+<tbody>
+<% @lahat_ng_savings.each do |saving| %>
+<tr>
+   <td><%= saving.name %></td>
+   <td><%= saving.value %></td>
+</tr>
+<% end %>
+</tbody>
+</table>
