@@ -1,6 +1,11 @@
 class SavingsController < ApplicationController
 
   def index
-    @lahat_ng_savings = Saving.all
+    @savings = Saving.all
   end
+
+  def new
+    @saving = Saving.new
+  end
+
 end
