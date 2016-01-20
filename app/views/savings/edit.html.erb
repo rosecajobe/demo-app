@@ -1,0 +1,15 @@
+<h1>Edit Savings</h1>
+<%= form_for(@saving) do |saving| %>
+
+  <div class="field">
+    <%= saving.label :name %><br>
+    <%= saving.text_field :name %>
+  </div>
+  <div class="field">
+    <%= saving.label :value %><br>
+    <%= saving.text_field :value %>
+  </div>
+  <div class="actions">
+    <%= saving.submit %>
+  </div>
+<% end %>

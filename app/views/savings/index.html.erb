@@ -17,7 +17,8 @@
 <tr>
    <td><%= saving.name %></td>
    <td><%= saving.value %></td>
-   <td><%= link_to 'Show Savings' , new_saving_path%> </td>
+   <td><%= link_to 'Show Savings' , saving_path(saving)%> </td>
+   <td><%= link_to 'Edit Savings' , edit_saving_path(saving)%> </td>
 </tr>
 <% end %>
 </tbody>

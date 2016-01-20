@@ -14,6 +14,16 @@ class SavingsController < ApplicationController
     redirect_to savings_path
   end
 
+  def show
+    @saving = Saving.find(params[:id])
+  end
+
+  def edit
+    @saving = Saving.find(params[:id])
+
+  end
+
+
   private
   def user_params
     params.require(:saving).permit(:name, :value)
