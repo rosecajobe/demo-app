@@ -19,6 +19,7 @@
    <td><%= saving.value %></td>
    <td><%= link_to 'Show Savings' , saving_path(saving)%> </td>
    <td><%= link_to 'Edit Savings' , edit_saving_path(saving)%> </td>
+   <td><%= link_to 'Destroy', saving, method: :delete, data: { confirm: 'Are you sure?' } %></td>
 </tr>
 <% end %>
 </tbody>
